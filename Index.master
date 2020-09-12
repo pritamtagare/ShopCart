@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Index.master.cs" Inherits="Index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ShopCart.com</title>
+     <link rel="stylesheet" type="text/css" href="StyleSheet.css"/>
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="header">
+        <a href="Default.aspx" class="logo"><img src="Images/logo.png" style="width: 165px; height: 20px; margin-top: 0px" alt="not found"/></a>
+       
+            <a class="active" href="Default.aspx">Home</a>
+            <a href="tees.aspx">Tees</a>
+            <a href="#Shirt">Shirts</a>
+            <a href="#lower">Lowers</a>
+            <a href="#vest">Vest</a>
+            <a href="#jogger">Joggers</a>&nbsp;
+            <a href="login.aspx" id="a1">
+                <asp:Label ID="Label1" runat="server" Text="Login"></asp:Label></a>
+        
+    </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <br>
+    
+     <footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">Blog</a>
+					·
+					<a href="#">Pricing</a>
+					·
+					<a href="#">About</a>
+					·
+					<a href="#">Faq</a>
+					·
+					<a href="#">Contact</a>
+				</p>
+
+				<p>Shopcart &copy; 2015</p>
+			</div>
+
+		</footer>
+</body>
+</html>
+
